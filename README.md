@@ -12,9 +12,9 @@
 <pre><code>https://ahmed-bousrih.github.io/Little-Journey/Name</code></pre>
 <p>Try it with any name by appending it to the URL:</p>
 <ul>
-  <li><code>https://ahmed-bousrih.github.io/Little-Journey/Magdalena</code></li>
-  <li><code>https://ahmed-bousrih.github.io/Little-Journey/Lily</code></li>
-  <li><code>https://ahmed-bousrih.github.io/Little-Journey/Emma</code></li>
+  <li><code>https://ahmed-bousrih.github.io/Little-Journey/#/Magdalena</code></li>
+  <li><code>https://ahmed-bousrih.github.io/Little-Journey/#/Lily</code></li>
+  <li><code>https://ahmed-bousrih.github.io/Little-Journey/#/Emma</code></li>
 </ul>
 <p>The story will automatically include the name you choose. 💌</p>
 
