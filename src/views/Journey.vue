@@ -168,44 +168,39 @@ onUnmounted(() => clearInterval(interval));
   text-align: center;
 }
 .heart {
-  width: 90px;
-  height: 90px;
-  background: #ff4d6d;
-  transform: rotate(-45deg);
-  margin: 0 auto;
-  animation: beat 1.4s infinite;
-  box-shadow: 0 0 40px #ff4d6d88;
   position: relative;
-  border-radius: 0 90px 0 90px;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+  transform: scale(1);
+  animation: beat 1.4s infinite;
 }
 .heart::before,
 .heart::after {
   content: "";
-  width: 90px;
-  height: 90px;
-  background: #ff4d6d;
-  border-radius: 50%;
   position: absolute;
-}
-.heart::before {
-  top: -45px;
-  left: 0;
-}
-.heart::after {
-  left: -45px;
+  width: 50px;
+  height: 80px;
+  background: #ff4d6d;
+  border-radius: 50px 50px 0 0;
   top: 0;
 }
-@keyframes beat {
-  0% {
-    transform: rotate(-45deg) scale(0.9);
-  }
-  50% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  100% {
-    transform: rotate(-45deg) scale(0.9);
-  }
+.heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
 }
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
 .heart-text {
   margin-top: 14px;
   opacity: 0.8;
