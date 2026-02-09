@@ -10,8 +10,13 @@
   It’s personalized — you can share a link like:
 </p>
 <pre><code>https://YOUR_USERNAME.github.io/little-journey/Name</code></pre>
-<p>…and the story will include the name of the person in the text.</p>
-<p>This project is <strong>free to use</strong> and can be shared with anyone you love. 💌</p>
+<p>Try it with any name by appending it to the URL:</p>
+<ul>
+  <li><code>https://AhmedBousrih.github.io/little-journey/Magdalena</code></li>
+  <li><code>https://AhmedBousrih.github.io/little-journey/Lily</code></li>
+  <li><code>https://AhmedBousrih.github.io/little-journey/Emma</code></li>
+</ul>
+<p>The story will automatically include the name you choose. 💌</p>
 
 <h2>✨ Features</h2>
 <ul>
