@@ -9,7 +9,7 @@
 <p>
   It’s <strong>personalizable</strong> — you can share a link like:
 </p>
-<pre><code>https://ahmed-bousrih.github.io/Little-Journey/Name</code></pre>
+<pre><code>https://ahmed-bousrih.github.io/Little-Journey/#/"Name Of Coice"</code></pre>
 <p>Try it with any name by appending it to the URL:</p>
 <ul>
   <li><code>https://ahmed-bousrih.github.io/Little-Journey/#/Magdalena</code></li>
