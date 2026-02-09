@@ -14,19 +14,34 @@ const name = computed(() => {
 /* ---------------- Story Script (reactive) ---------------- */
 const lines = computed(() => [
   `Some distances are measured in kilometers…`,
-  `…others are measured in heartbeats.`,
-  `Time moves normally for the world…`,
-  `but slower when I miss you, ${name.value}.`,
-  `Some nights feel too quiet without you.`,
-  `Some thoughts return only to you.`,
-  `Distance is real…`,
-  `but so is what I feel for you.`,
-  `I miss you, ${name.value}.`,
+  `…others in the quiet spaces between heartbeats.`,
+  `Time flows normally for everyone else…`,
+  `…but slows when I think of you, ${name.value}.`,
+  `Nights are longer without your laughter or voice around me.`,
+  `I read and replay our conversations every night,`,
+  `…and hold your photos close until my tears fade.`,
+  `I hear your voice comforting me through my tears and sickness,`,
+  `…and I wish I could hear it again just one more time.`,
+  `Thoughts of you arrive from everywhere, reminding me of your love.`,
+  `Distance is stubborn, unmoved by wishes or plans…`,
+  `…yet my heart still carries you everywhere it goes.`,
+  `I replay our memories softly, even if they are bittersweet.`,
+  `All our low, sad moments and precious happy ones,`,
+  `…because they are all part of our love story.`,
+  `Every problem and obstacle we faced together,`,
+  `…and every time we lifted each other up again.`,
+  `All the times you said, “I wish you good night and sweet dreams.”`,
+  `It's just so hard living knowing we can't be together.`,
+  `I miss you, ${name.value}, more than I can ever say.`,
+  `But I hope it reminds you that I love you and always will.`,
+  `I wasn't the best boyfriend for you, but I hope you forgive me.`,
+  `You deserve the world, and I respect your choice to move on.`,
+  `I just hope you remember me fondly, not with pain.`,
 ]);
 
 /* ---------------- Step + Timer ---------------- */
 const step = ref(0);
-const secondsLeft = ref(7);
+const secondsLeft = ref(5);
 let interval = null;
 
 function startTimer() {
@@ -38,9 +53,13 @@ function startTimer() {
 
 function nextStep() {
   runTyped(lines.value[step.value]);
+  if (step.value === lines.value.length - 1) {
+    step.value=0;
+    return;
+  }
   if (step.value < lines.value.length - 1) {
     step.value++;
-    secondsLeft.value = 7;
+    secondsLeft.value = 5;
   } else {
     clearInterval(interval);
   }
@@ -91,12 +110,12 @@ onUnmounted(() => clearInterval(interval));
 
     <div class="content">
       <div :key="step">
-        <h1 v-if="step === 0">A small journey for {{ name }}</h1>
+        <h1 v-if="step === 0">A small message for {{ name }}</h1>
 
         <!-- 💓 heartbeat scene on step 2 -->
-        <div v-if="step === 2" class="heart-wrap">
+        <div v-if="step === 1" class="heart-wrap">
           <div class="heart"></div>
-          <p class="heart-text">Still beating for you</p>
+          <p class="heart-text">Always beating for you</p>
         </div>
 
         <p ref="typedEl"></p>

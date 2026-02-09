@@ -7,14 +7,14 @@
   “Little Journey” is a step-by-step story with animated backgrounds, a heartbeat animation, parallax stars, and a typing effect that delivers short romantic phrases.
 </p>
 <p>
-  It’s personalized — you can share a link like:
+  It’s <strong>personalizable</strong> — you can share a link like:
 </p>
-<pre><code>https://YOUR_USERNAME.github.io/little-journey/Name</code></pre>
+<pre><code>https://ahmed-bousrih.github.io/Little-Journey/Name</code></pre>
 <p>Try it with any name by appending it to the URL:</p>
 <ul>
-  <li><code>https://AhmedBousrih.github.io/little-journey/Magdalena</code></li>
-  <li><code>https://AhmedBousrih.github.io/little-journey/Lily</code></li>
-  <li><code>https://AhmedBousrih.github.io/little-journey/Emma</code></li>
+  <li><code>https://ahmed-bousrih.github.io/Little-Journey/Magdalena</code></li>
+  <li><code>https://ahmed-bousrih.github.io/Little-Journey/Lily</code></li>
+  <li><code>https://ahmed-bousrih.github.io/Little-Journey/Emma</code></li>
 </ul>
 <p>The story will automatically include the name you choose. 💌</p>
 
